@@ -7,19 +7,22 @@ public class Student {
     private String email;
     private String dateOfBirth;
     private String mobileNumber;
+    private int age;
 
     public Student(int id,
                    String name,
                    String gender,
                    String email,
                    String dateOfBirth,
-                   String mobileNumber) {
+                   String mobileNumber,
+                   int age) {
         this.id = id;
         this.name = name;
         this.gender = gender;
         this.email = email;
         this.dateOfBirth = dateOfBirth;
         this.mobileNumber = mobileNumber;
+        this.age = age;
     }
 
     public int getId() {
@@ -69,4 +72,13 @@ public class Student {
     public void setMobileNumber(String mobileNumber) {
         this.mobileNumber = mobileNumber;
     }
+    
+    public int getAge(int age){
+        return age;
+    }
+    
+    public void setAge(int age){
+        this.age = age ;
+    }
+    
 }
